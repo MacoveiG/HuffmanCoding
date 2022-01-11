@@ -1,6 +1,6 @@
 package com.code;
 
-// класс для представления кодового дерева
+// class pentru contruirea arborelui
 public class CodeTreeNode implements Comparable<CodeTreeNode> {
 
     Character content;
@@ -25,7 +25,7 @@ public class CodeTreeNode implements Comparable<CodeTreeNode> {
         return o.weight - weight;
     }
 
-    // извлечение кода для символа
+    // determinarea codului simbolului
     public String getCodeForCharacter(Character ch, String parentPath) {
         if (content == ch) {
             return parentPath;
